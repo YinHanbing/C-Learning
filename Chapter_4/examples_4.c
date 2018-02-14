@@ -32,7 +32,7 @@ void praise1(void)
 	char name[40];
 
 	printf("What's your name? ");
-	scanf_s("%s", name,sizeof name);
+	scanf_s("%s", name,sizeof name);	// ERROR: Crash after typing spaces, tabs, etc. behind the first word.
 	printf("Hello, %s. %s\n", name, PRAISE);
 
 	getchar();
@@ -46,12 +46,31 @@ void praise2(void)
 	char name[40];
 
 	printf("What's your name? ");
-	scanf_s("%s", name,sizeof name);
+	scanf_s("%s", name,sizeof(name));	// ERROR: Crash after typing spaces, tabs, etc. behind the first word.
 	printf("Hello, %s. %s\n", name, PRAISE);
 	printf("Your name of %zd letters occupies %zd memory cells.\n", 
-			strlen(name), sizeof name);
+			strlen(name), sizeof(name));
 	printf("The phrase of praise has %zd letters", strlen(PRAISE));
-	printf("and occupies %zd memory cells.\n", sizeof PRAISE);
+	printf("and occupies %zd memory cells.\n", sizeof(PRAISE));
+
+	getchar();
+}
+
+//* pizza -- uses defined constants in a pizza context */
+#define PI 3.14159
+
+void pizza(void)
+{
+	float area, circum, radius;	// 面积，周长，半径
+
+	printf("What is the radius of your pizza?\n");
+	scanf_s("%f", &radius);
+
+	area = PI * radius * radius;
+	circum = 2.0 * PI * radius;
+
+	printf("Your basic pizza paramenters are as follow:\n");
+	printf("circumference = %1.2f, area = %1.2f\n", circum, area);
 
 	getchar();
 }

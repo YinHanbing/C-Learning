@@ -1,6 +1,6 @@
 #pragma once
 #include <stdio.h>
-#include <inttypes.h>	// support portable type 支持可移植类型
+#include <inttypes.h>	// support portable type 
 
 /*
 	* Keywords:

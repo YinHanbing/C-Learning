@@ -31,12 +31,12 @@
 */
 
 
-#define DENSITY 62.4	// human density in lbs per cu ft (人体密度：磅/立方英尺)
+#define DENSITY 62.4	// human density in lbs per cu ft
 #define PRAISE "You are an extraordinary being."
 #define PI 3.14159
 //#define PI_1 3.141593
 #define PAGES 959
-#define BLURB "Authentic imitation!"	// 20 characters in quotes(引号)
+#define BLURB "Authentic imitation!"	// 20 characters in quotes
 #define PAGES_1 336
 #define WORDS 65618
 

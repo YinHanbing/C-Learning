@@ -55,7 +55,7 @@ void praise2(void)
 //* pizza -- uses defined constants in a pizza context */
 void pizza(void)
 {
-	float area, circum, radius;	// 面积，周长，半径
+	float area, circum, radius;	 
 
 	printf("What is the radius of your pizza?\n");
 	scanf_s("%f", &radius);

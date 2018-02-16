@@ -3,9 +3,9 @@
 /*
 	Find out what your system does with:
 
-	integer overflow(上溢),
+	integer overflow),
 	floating-point overflow,
-	floating-point underflow(下溢),
+	floating-point underflow,
 	by using the experimental approach;
 
 	that is, write programs	having these problems.
@@ -98,7 +98,7 @@ void year_sec(void)
 
 
 /*
-	The mass of a single molecule(分子) of water is about 3.0×10-23 grams. A quart(夸脱) of water is about 950 grams.
+	The mass of a single molecule(分子) of water is about 3.0×10-23 grams. A quart of water is about 950 grams.
 
 	Write a program that
 	requests an amount of water, in quarts,

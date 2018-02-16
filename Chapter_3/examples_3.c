@@ -14,7 +14,7 @@ void pltinum(void)
 	// get input from the user
 	scanf_s("%f", &weight);	// %f: make scanf() read a floating-number from keyboard, &weight: weight = input value
 	// assume platinum is $1700 per ounce
-	// 14.5833 converts pounds adv. (avoirdupois 常衡盎司) to ounces troy (金衡盎司)
+	// 14.5833 converts pounds adv. (avoirdupois) to ounces troy 
 	value = 1700.0 * weight * 14.5833;
 	printf("Your weight in platinum is worth $%.2f.\n", value);
 	printf("You are easily worth that! If platinum prices drop,\n");
@@ -77,7 +77,7 @@ void charcode(void)
 	char ch;
 
 	printf("Please enter a character.\n");
-	scanf_s("%c", &ch);	// user input character (case sensitive 区分大小写)
+	scanf_s("%c", &ch);	// user input character (case sensitive)
 	printf("The code for %c is %d.\n", ch, ch);
 	getchar();
 }
@@ -102,7 +102,7 @@ void showf_pt(void)
 	double abet = 2.14e9;
 	long double dip = 5.32e-5;
 
-	printf("%f can be written %e\n", aboat, aboat);	// use %e to print in exponential notation 打印指数记数法的浮点数
+	printf("%f can be written %e\n", aboat, aboat);	// use %e to print in exponential notation 
 	// next line requires C99 or later compliance
 	printf("And it's %a in hexadecimal, power of 2 notation\n", aboat);
 	printf("%f can be written %e\n", abet, abet);

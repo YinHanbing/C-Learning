@@ -155,4 +155,55 @@ void stringf(void)					// BLURB has 20 characters
 }
 
 
+/* intconv -- some mismatched integer conversions */
+void intconv(void)
+{
+	short num = PAGES;
+	short mnum = -PAGES;
 
+	printf("num as short and unsigned short:   %hd %hu\n", num, num);	// 959 959
+	printf("-num as short and unsigned short:   %hd %hu\n", mnum, mnum);	// -959 64577
+	printf("num as int and char: %d %c\n", num, num);	// 959 ?
+														// the character of ACSII code 959 is '?' 
+	printf("WORDS as int, short, and char: %d %hd %c\n", WORDS, WORDS, WORDS);	// 65618 82 R
+																				// printf("%hd", 65618); = 65618 % 65536 = 82
+}
+
+
+/* floatcnv -- mismatched floating-point conversions */
+void floatcov(void)
+{
+	float n1 = 3.0;			// n1 8 bytes in stack
+							// float is converted to doubule when used as arguements to printf().
+	double n2 = 3.0;		// n2 8 bytes in stack
+	long n3 = 2000000000;	// n3 4 bytes in stack
+	long n4 = 1234567890;	// n4 4 bytes in stack
+	
+	printf("%.1e %.1e %.1e %.1e\n", n1, n2, n3, n4);	// %e make printf() expect a type double value(8 bytes)
+	printf("%ld %ld\n", n3, n4);	// correct output 
+	printf("%ld %ld %ld %ld\n", n1, n2, n3, n4);	// %ld make prinf() read 4 bytes, ERROR!
+}
+
+
+/* prntval -- finding printf()'s return value */
+void prntval(void)
+{
+	int bph2o = 212;
+	int rv;
+
+	rv = printf("%d F is water's boiling point.\n", bph2o);	// rv = printf(...); 
+															// prints information and assigns a value to a variable.
+	printf("The printf() function printed %d characters.\n", rv);
+}
+
+
+/* longstrg ¨C¨C printing long strings */
+void longstrg(void)
+{
+	printf("Here's onr way to print a ");
+	printf("long string.\n");
+	printf("Here's another way to print a \
+long string.\n");
+	printf("Here's the newest way to print a "
+		"long string.\n");	// ANSI C
+}

@@ -11,7 +11,11 @@ int main(void)
 	//width();
 	//floats();
 	//flags();
-	stringf();
+	//stringf();
+	//intconv();
+	//floatcov();
+	//prntval();
+	longstrg();
 
 	getchar();
 	return 0;

@@ -15,7 +15,10 @@ int main(void)
 	//intconv();
 	//floatcov();
 	//prntval();
-	longstrg();
+	//longstrg();
+	//input();
+	//varwid();
+	skiptwo();
 
 	getchar();
 	return 0;

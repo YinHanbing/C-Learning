@@ -85,7 +85,7 @@ void defines(void)
 }
 
 
-/* printout.c -- uses conversion specifiers */
+//* printout.c -- uses conversion specifiers */
 void printout(void)
 {
 	int number = 7;
@@ -98,7 +98,7 @@ void printout(void)
 	printf("%c%d\n", '$', 2 * cost);
 }
 
-/* width -- field widths */
+//* width -- field widths */
 // #define PAGES 959
 // 959 is a 3 digits long integer
 void width(void)
@@ -132,7 +132,7 @@ void floats(void)
 }
 
 
-/* flags -- illustrates some formatting flags */
+//* flags -- illustrates some formatting flags */
 void flags(void)
 {
 	printf("%x %X %#x\n", 31, 31, 31);						// 1f 1F 0x1f
@@ -143,7 +143,7 @@ void flags(void)
 }
 
 
-/* stringf -- string formatting */
+//* stringf -- string formatting */
 void stringf(void)					// BLURB has 20 characters
 {
 	printf("[%2s]\n", BLURB);		// [Authentic imitation!]
@@ -155,7 +155,7 @@ void stringf(void)					// BLURB has 20 characters
 }
 
 
-/* intconv -- some mismatched integer conversions */
+//* intconv -- some mismatched integer conversions */
 void intconv(void)
 {
 	short num = PAGES;
@@ -170,7 +170,7 @@ void intconv(void)
 }
 
 
-/* floatcnv -- mismatched floating-point conversions */
+//* floatcnv -- mismatched floating-point conversions */
 void floatcov(void)
 {
 	float n1 = 3.0;			// n1 8 bytes in stack
@@ -185,7 +185,7 @@ void floatcov(void)
 }
 
 
-/* prntval -- finding printf()'s return value */
+//* prntval -- finding printf()'s return value */
 void prntval(void)
 {
 	int bph2o = 212;
@@ -197,7 +197,7 @@ void prntval(void)
 }
 
 
-/* longstrg 每每 printing long strings */
+//* longstrg 每每 printing long strings */
 void longstrg(void)
 {
 	printf("Here's onr way to print a ");
@@ -206,4 +206,53 @@ void longstrg(void)
 long string.\n");
 	printf("Here's the newest way to print a "
 		"long string.\n");	// ANSI C
+}
+
+
+//* input -- when to use & */
+void input(void)
+{
+	int age;	// variable
+	float assets;	// variable 
+	char pet[30];	// string
+
+	printf("Enter your age, assets, and favourite pet.\n");
+	scanf_s("%d %f", &age, &assets);	// use the & here
+	scanf_s("%s", pet, sizeof(pet));	// no & for char array
+	printf("%d $%.2f %s\n", age, assets, pet);
+
+	getchar();
+}
+
+
+//* varwid.c -- uses variable-width output field */
+void varwid(void)
+{
+	unsigned width, precision;
+	int number = 256;
+	double weight = 242.5;
+
+	printf("Enter a field width:\n");
+	scanf_s("%d", &width);
+	printf("The number is :%*d\n", width, number);	// *: spicify the field width
+													// d: assign the arguement "number"
+	printf("Now enter a width and a precision:\n");
+	scanf_s("%d %d", &width, &precision);
+	printf("Weight = %*.*f\n", width, precision, weight);	// "%*(width).*(precision)f"
+	printf("Done!\n");
+
+	getchar();
+}
+
+
+//* skiptwo -- skips over first two integers of input */
+void skiptwo(void)
+{
+	int n;
+
+	printf("Please enter three integers:\n");
+	scanf_s("%*d %*d %d", &n);	// skip two integers and copy the third into n
+	printf("The last integer was %d\n", n);
+
+	getchar();
 }

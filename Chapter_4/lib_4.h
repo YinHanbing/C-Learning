@@ -65,6 +65,7 @@
 	6.	FLOAT(4 bytes):
 
 		6.1	float is converted to doubule(8 bytes) when used as arguements to printf().
+		
 		6.2	%e make printf() expect a type double value(8 bytes)
 	--------------------------------------------------------------------------------------------------------
 	7.	Return value of printf() function:
@@ -78,11 +79,79 @@
 		8.1 End with out a \n character
 			printf("abc ");
 			printf("def.\n");	--> abc def.
+
 		8.2	Terminate the end of the first line with a backslash/return combination:
 			pirntf("abc \
 			def.\n");			--> abc def.
+
 		8.3 ANCI-C-intrduced string concatenation:
 			printf("abc "     "def"".");	--> abc def.
+	--------------------------------------------------------------------------------------------------------
+	9.	SCANF():
+		9.1	The scanf() function uses whitespace (newlines, tabs, and spaces) to decide how to divide the 
+			input into separate fields.
+
+		9.2 ANCI C Conversion Specificers for scanf()
+			%c				--> Interpret input as a character.
+			%d				--> Interpret input as a signed decimal integer.
+			%e, %f, %g, %a	--> Interpret input as a floating-point number (%a is C99).
+			%E, %e, %G, %a	--> Interpret input as a floating-point number (%A is C99).
+			%i				--> Interpret input as a signed decimal integer.
+			%o				--> Interpret input as a signed octal integer.
+			%p				--> Interpret input as a pointer (an address).
+			%s				--> Interpret input as a string. 
+								Input begins with the first non-whitespace character 
+								and includes everything up to the next whitespace character.
+			%u				--> Interpret input as an unsigned decimal integer.
+			%x, %X			--> Interpret input as a signed hexadecimal integer.
+
+		9.3 Conversion Modifiers for scanf()
+			*				--> Suppress assignment.
+								Example: "%*d".
+			digit(s)		--> Maximum field width. 
+								Input stops when the maximum field width is reached or
+								when the first whitespace character is encountered, whichever comes first.
+								Example: "%10s".
+			hh				--> Read an integer as a signed char or unsigned char.
+								Examples: "%hhd" "%hhu".
+			ll				--> Read an integer as a long long or unsigned long long (C99).
+								Examples: "%lld" "%llu".
+			h, l, or L		--> "%hd" and "%hi" indicate that the value will be stored in a short int. "%ho",
+								"%hx", and "%hu" indicate that the value will be stored in an unsigned short
+								int . "%ld" and "%li" indicate that the value will be stored in a long. "%lo",
+								"%lx", and "%lu" indicate that the value will be stored in unsigned long.
+								"%le", "%lf", and "%lg" indicate that the value will be stored in type double.
+								Using L instead of l with e, f, and g indicates that the value will be stored in
+								type long double . In the absence of these modifiers, d, i, o, and x indicate
+								type int, and e, f, and g indicate type float.
+			j				--> When followed by an integer specifier, indicates using the intmax_t or uintmax_t type (C99).
+								Examples: "%jd" "%ju".
+			z				--> When followed by an integer specifier, indicates using the type returned by sizeof (C99).
+								Examples: "%zd" "%zo".	
+			t				--> When followed by an integer specifier, indicates using the type used to represent the difference between two pointers (C99).
+								Examples: "%td" "%tx".7u
+
+	--------------------------------------------------------------------------------------------------------
+	10. The * Modifier with printf() and scanf():
+		10.1 In printf():
+			 %*d	--> * To specify the field width
+					--> d To assign the arguement
+
+		10.2 In scanf():
+			 %*d	--> To skip over corresponding input.
+
+	--------------------------------------------------------------------------------------------------------
+	11. Usage Tips for printf():
+		1. Specifying fixed field widths to print columns of data.
+		2. if a number is to be embedded in a phrase, 
+		   it is often convenient to specify field as small or smaller than the expected number width.
+	--------------------------------------------------------------------------------------------------------
+	--------------------------------------------------------------------------------------------------------
+	--------------------------------------------------------------------------------------------------------
+	--------------------------------------------------------------------------------------------------------
+	--------------------------------------------------------------------------------------------------------
+	--------------------------------------------------------------------------------------------------------
+	--------------------------------------------------------------------------------------------------------
 	--------------------------------------------------------------------------------------------------------
 
 */
@@ -98,7 +167,7 @@
 #define WORDS 65618
 
 
-/*--- Declaration of Functions in Examples ---*/
+//*--- Declaration of Functions in Examples ---*/
 
 //* talkback -- nosy, informative program */
 void talkback(void);
@@ -115,32 +184,40 @@ void pizza(void);
 //* defines -- uses defined constants from limit.h and float */
 void defines(void);
 
-/* printout -- uses conversion specifiers */
+//* printout -- uses conversion specifiers */
 void printout(void);
 
-/* width -- field widths */
+//* width -- field widths */
 void width(void);
 
-// floats -- some floating-point combinations
+//* floats -- some floating-point combinations */
 void floats(void);
 
-/* flags -- illustrates some formatting flags */
+//* flags -- illustrates some formatting flags */
 void flags(void);
 
-/* stringf -- string formatting */
+//* stringf -- string formatting */
 void stringf(void);
 
-/* intconv -- some mismatched integer conversions */
+//* intconv -- some mismatched integer conversions */
 void intconv(void);
 
-/* floatcnv -- mismatched floating-point conversions */
+//* floatcnv -- mismatched floating-point conversions */
 void floatcov(void);
 
-/* prntval -- finding printf()'s return value */
+//* prntval -- finding printf()'s return value */
 void prntval(void);
 
-/* longstrg 每每 printing long strings */
+//* longstrg 每每 printing long strings */
 void longstrg(void);
 
+//* input -- when to use & */
+void input(void);
 
-/*--- Declaration of Functions in Programming Exercises ---*/
+//* varwid -- uses variable-width output field */
+void varwid(void);
+
+//* skiptwo -- skips over first two integers of input */
+void skiptwo(void);
+
+//*--- Declaration of Functions in Programming Exercises ---*/

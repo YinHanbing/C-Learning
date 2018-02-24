@@ -33,7 +33,7 @@
 	4.	SHORT INT(2 Bytes):
 		2 bytes = 16 bits		2^16 = 65536	65536/2 = 32768
 
-		4.1	TWO¡¯S COMPLEMENT for signed integers:
+		4.1	TWO'S COMPLEMENT for signed integers:
 			[0,32767]		--> positive numbers[0 ~ 32767]
 			[32768,65536]	--> negative numbers[-32678 ~ -1]
 		
@@ -156,7 +156,6 @@
 
 */
 
-
 #define DENSITY 62.4	// human density in lbs per cu ft
 #define PRAISE "You are an extraordinary being."
 #define PI 3.14159
@@ -166,8 +165,7 @@
 //#define PAGES_1 336
 #define WORDS 65618
 
-
-//*--- Declaration of Functions in Examples ---*/
+//*--- Declaration of Functions in Examples ---*//
 
 //* talkback -- nosy, informative program */
 void talkback(void);
@@ -220,4 +218,30 @@ void varwid(void);
 //* skiptwo -- skips over first two integers of input */
 void skiptwo(void);
 
-//*--- Declaration of Functions in Programming Exercises ---*/
+
+
+//*--- Declaration of Functions in Programming Exercises ---*//
+
+//* name -- enters your name and display it back to fornt */
+void namecov(void);
+
+//* varname -- displays a name in different ways */
+void varname(void);
+
+//* fnum -- displays a floating-number in decimal-point and exponential notation */
+void fnum(void);
+
+//* higtcov -- displays your name and height */ 
+void higtcov(void);
+
+//* speed -- caculates the download time */
+void dtime(void);
+
+//* namechar -- displays the number of characters of your name */
+void namechar(void);
+
+//* dfval -- displays the double value and float value in different ways */
+void dfval(void);
+
+//* fulcos -- caculates the fuel consumption */
+void fulcos(void);

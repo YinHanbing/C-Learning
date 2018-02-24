@@ -18,7 +18,15 @@ int main(void)
 	//longstrg();
 	//input();
 	//varwid();
-	skiptwo();
+	//skiptwo();
+	//namecov();
+	//varname();
+	//fnum();
+	//higtcov();
+	//dtime();
+	//namechar();
+	//dfval();
+	fulcos();
 
 	getchar();
 	return 0;

@@ -1,9 +1,4 @@
 #pragma once
-#include <stdio.h>
-#include <string.h>	// for strlen() prototype
-#include <float.h>	// floating-point limits
-#include <limits.h>	// integer limits
-
 /*
 	1.	Parentheses in sizeof():
 		using size of a type				--> sizeof(int)
@@ -135,7 +130,7 @@
 	10. The * Modifier with printf() and scanf():
 		10.1 In printf():
 			 %*d	--> * To specify the field width
-					--> d To assign the arguement
+					--> d To assign the argument
 
 		10.2 In scanf():
 			 %*d	--> To skip over corresponding input.
@@ -155,6 +150,11 @@
 	--------------------------------------------------------------------------------------------------------
 
 */
+
+#include <stdio.h>
+#include <string.h>	// for strlen() prototype
+#include <float.h>	// floating-point limits
+#include <limits.h>	// integer limits
 
 #define DENSITY 62.4	// human density in lbs per cu ft
 #define PRAISE "You are an extraordinary being."
@@ -206,7 +206,7 @@ void floatcov(void);
 //* prntval -- finding printf()'s return value */
 void prntval(void);
 
-//* longstrg ¨C¨C printing long strings */
+//* longstrg ï¿½Cï¿½C printing long strings */
 void longstrg(void);
 
 //* input -- when to use & */

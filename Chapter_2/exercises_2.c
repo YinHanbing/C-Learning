@@ -34,7 +34,7 @@ void t_ad(void)
 
 /*
 	Write a program that converts your age in years to days and displays both values.
-	At this point, don°Øt worry about fractional years and leap years.
+	At this point, don‚Äôt worry about fractional years and leap years.
 */
 void t_year_day(void)
 {
@@ -56,7 +56,7 @@ void t_year_day(void)
 	Which nobody can deny!
 
 	Have the program use two user-defined functions in addition to main() : 
-	One named jolly() that prints the °∞jolly good°± message once.
+	One named jolly() that prints the ‚Äújolly good‚Äù message once.
 	One named deny() that prints the final line once.
 */
 void jolly(void)
@@ -87,8 +87,8 @@ void t_fellow(void)
 	China, India,
 
 	Have the program use two user-defined functions in addition to main() : 
-	One named br() that prints °∞Brazil, Russia°± once.
-	One named ci() that prints °∞China, India°± once. 
+	One named br() that prints ‚ÄúBrazil, Russia‚Äù once.
+	One named ci() that prints ‚ÄúChina, India‚Äù once. 
 	Let main() take care of any additional printing tasks.
 */
 void ci(void)

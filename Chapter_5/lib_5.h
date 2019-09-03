@@ -17,9 +17,9 @@
 		--> prefix: ++b, b is changed before its value is used.
 	
 	4.	Tips:
-		--> Don¡¯t use increment or decrement operators on a variable 
+		--> Don't use increment or decrement operators on a variable 
 			that is part of more than one argument of a function.
-		--> Don¡¯t use increment or decrement operators on a variable 
+		--> Don't use increment or decrement operators on a variable 
 			that appears more than once in an expression.
 */
 
@@ -61,7 +61,7 @@ void size(void);
 //* min_sec -- converts seconds to minutes and seconds */
 void minsec(void);
 
-/* add_one -- incrementing: prefix and postfix */
+//* add_one -- incrementing: prefix and postfix */
 void add_one(void);
 
 //* post_pre -- postfix vs prefix */
@@ -74,3 +74,10 @@ void bottles(void);
 
 
 //*--- Declaration of Functions in Programming Exercises ---*//
+
+//* timeconv -- convers minutes to minutes and hours */
+void timeconv(void);
+
+//* selfadd -- print a integer itself and the next 10 integers  */
+void selfadd(void);
+

@@ -11,8 +11,8 @@ int main(void)
 	//t_fellow();
 	//t_country();
 	//t_toes();
-	//t_smile();
-	t_count();
+	t_smile();
+	//t_count();
 
 
 	getchar();

@@ -5,7 +5,7 @@ void talkback(void)
 {
 	float weight, volume;
 	int size, letters;
-	char name[40];	// name is an array of 40 chars£¬39 chars for characters, and 1 for null cahracter which marks the end of a string.
+	char name[40];	// name is an array of 40 charsï¼Œ39 chars for characters, and 1 for null character which marks the end of a string.
 
 	printf("Hi! What's your first name?\n");
 	scanf_s("%s", name, sizeof(name));	// 'sizeof(name)' is important. scanf_s() require the buffer size to be specified for all input parameters of type c,C,s,S.
@@ -197,7 +197,7 @@ void prntval(void)
 }
 
 
-//* longstrg ¨C¨C printing long strings */
+//* longstrg â€“â€“ printing long strings */
 void longstrg(void)
 {
 	printf("Here's onr way to print a ");

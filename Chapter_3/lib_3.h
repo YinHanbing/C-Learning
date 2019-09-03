@@ -53,8 +53,8 @@ void escape(void);
 
 /*--- Declaration of Functions in Programming Exercises ---*/
 
-//* exercise_1 ouflow -- displays the overflow and underflow of some datatyps */
-void ouflow(void);
+//* exercise_1 overflow -- displays the overflow and underflow of some datatypes */
+void overflow(void);
 
 //* exercise_2 codevalue -- displays code number for a character */
 void codevalue(void);

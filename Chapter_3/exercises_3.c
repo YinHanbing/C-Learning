@@ -12,7 +12,7 @@
 	(You can check the discussion in Chapter 4 of limits.h and
 	float.h to get guidance on the largest and smallest values.)
 */
-void ouflow(void)
+void overflow(void)
 {
 
 }
@@ -34,9 +34,9 @@ void codevalue(void)
 	getchar();
 
 	/*
-		When using %d in scanf_s(), it will go on but shows£º
+		When using %d in scanf_s(), it will go on but showsï¿½ï¿½
 		Have a Debug Error!
-		Run-Time Check Failure #2 - Stack around the variable 'ascii' was corruptd.
+		Run-Time Check Failure #2 - Stack around the variable 'ascii' was corrupted.
 	*/
 }
 
@@ -79,7 +79,7 @@ void fltnum(void)
 
 
 /*
-	There are approximately 3.156 ¡Á 10 7 seconds in a year.
+	There are approximately 3.156 ï¿½ï¿½ 10 7 seconds in a year.
 
 	Write a program that
 	requests your age in years and then displays the equivalent number of seconds.
@@ -98,7 +98,7 @@ void year_sec(void)
 
 
 /*
-	The mass of a single molecule(·Ö×Ó) of water is about 3.0¡Á10-23 grams. A quart of water is about 950 grams.
+	The mass of a single molecule(ï¿½ï¿½ï¿½ï¿½) of water is about 3.0ï¿½ï¿½10-23 grams. A quart of water is about 950 grams.
 
 	Write a program that
 	requests an amount of water, in quarts,

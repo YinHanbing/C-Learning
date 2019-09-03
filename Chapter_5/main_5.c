@@ -3,7 +3,7 @@
 int main(void)
 {
 
-	// shoes1();
+	//shoes1();
 	//shoes2();
 	//golf();
 	//squares();
@@ -14,7 +14,10 @@ int main(void)
 	//minsec();
 	//add_one();
 	//post_pre();
-	bottles();
+	//bottles();
+
+	//timeconv();
+	selfadd();
 
 	getchar();
 	return 0;

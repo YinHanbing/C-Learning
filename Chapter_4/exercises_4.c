@@ -28,7 +28,7 @@ void varname(void)
 {
 	char fname[10];
 
-	printf("Please enter your firsr name: ");
+	printf("Please enter your first name: ");
 	scanf_s("%s", fname, sizeof(fname));
 	printf("\"%s\"\n", fname);
 	printf("\"%20s\"\n", fname);
@@ -103,7 +103,7 @@ void dtime(void)
 }
 
 /*
-	Write a program that requests the user¡¯s first name and then the user¡¯s last name.
+	Write a program that requests the user's first name and then the user's last name.
 	Have it print the entered names on one line and the number of letters in each name on the following line.
 	Align each letter count with the end of the corresponding name, as in the following:
 
@@ -190,7 +190,7 @@ void fulcos(void)
 
 	getchar();
 
-	printf("Please enter your total fule consumption(gallon): ");
+	printf("Please enter your total fuel consumption(gallon): ");
 	scanf_s("%f", &gallon);
 
 	getchar();
@@ -200,5 +200,5 @@ void fulcos(void)
 	km = mile * KM_PER_MILE;
 	liter = gallon * LIT_PER_GAL;
 
-	printf("feul consumption is %.1f liters per 100km.\n", (100 * liter) / km);
+	printf("fuel consumption is %.1f liters per 100km.\n", (100 * liter) / km);
 }

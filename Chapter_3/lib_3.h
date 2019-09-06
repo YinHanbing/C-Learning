@@ -5,7 +5,7 @@
 /*
 	* Keywords:
 	  int, short, long, unsigned, char, float, double, _Bool, _Complex, _Imaginary
-	* Oprator:
+	* Operator:
 	  sizeof
 	* Function:
 	  scanf()

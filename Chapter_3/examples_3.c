@@ -2,7 +2,7 @@
 
 
 //* platinum -- your weight in platinum */
-void pltinum(void)
+void platinum(void)
 {
 	float weight;	// user weight
 	float value;	// platinum equivalent
@@ -22,7 +22,7 @@ void pltinum(void)
 	getchar();
 }
 
-//* print1 -- diaplays some properties of printf() */
+//* print1 -- displays some properties of printf() */
 void print1(void)
 {
 	int ten = 10;
@@ -31,7 +31,7 @@ void print1(void)
 	printf("Doing it right: ");
 	printf("%d minus %d is %d\n", ten, 2, ten - two);
 	printf("Doing it wrong: ");
-	printf("%d minus %d is %d\n", ten);	// forget 2 arguements
+	printf("%d minus %d is %d\n", ten);	// forget 2 arguments
 }
 
 
@@ -145,8 +145,8 @@ void badcount(void)
 	float f = 7.0f;
 	float g = 8.0f;
 
-	printf("%d\n", n, m);	// too many arguements
-	printf("%d %d %d\n", n);	// too few arguements
+	printf("%d\n", n, m);	// too many arguments
+	printf("%d %d %d\n", n);	// too few arguments
 	printf("%d %d\n", f, g);	// wrong kind of values
 }
 

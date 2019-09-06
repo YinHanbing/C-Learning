@@ -130,8 +130,6 @@ void minsec(void)
 		scanf_s("%d", &sec);
 	}
 	printf("Done!\n");
-
-	getchar();
 }
 
 

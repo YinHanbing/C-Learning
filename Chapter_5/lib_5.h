@@ -81,3 +81,9 @@ void timeconv(void);
 //* selfadd -- print a integer itself and the next 10 integers  */
 void selfadd(void);
 
+//* dayconv -- convers days to weeks and days */
+void dayconv(void);
+
+//* lenconv -- convers centimeters to feets and inchs */
+void lenconv(void);
+

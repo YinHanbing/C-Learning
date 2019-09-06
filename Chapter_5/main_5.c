@@ -17,8 +17,10 @@ int main(void)
 	//bottles();
 
 	//timeconv();
-	selfadd();
-
+	//selfadd();
+	//dayconv();
+	lenconv();
+	
 	getchar();
 	return 0;
 }

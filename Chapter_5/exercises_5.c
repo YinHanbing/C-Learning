@@ -6,7 +6,6 @@
 	Use a while loop to allow the user to enter values repeatedly
 	and terminate the loop if a value for the time of 0 or less is entered.
 */
-
 void timeconv(void)
 {
 	const int SPVN = 60;	// SPVN --> sexagesimal place value notation
@@ -29,7 +28,6 @@ void timeconv(void)
 	asks for an integer and then prints all the integers from (and including) that value up to (and including) a value larger by 10.
 	(That is, if the input is 5, the output runs from 5 to 15.) Be sure to separate each output value by a space or tab or newline.
 */
-
 void selfadd(void)
 {
 	int num;
@@ -55,7 +53,6 @@ void selfadd(void)
 	Use a while loop to allow the user to repeatedly enter day values;
 	terminate the loop when the user enters a nonpositive value, such as 0 or -20 .
 */
-
 void dayconv(void)
 {
 	const int DAY_PER_WEEK = 7;
@@ -86,7 +83,6 @@ void dayconv(void)
 	Enter a height in centimeters (<=0 to quit): 0
 	bye
 */
-
 void lenconv(void)
 {
 	const float CM_PER_IN = 2.54;
@@ -108,7 +104,6 @@ void lenconv(void)
 	}
 	printf("Bye!");
 }
-
 
 /*
 	Change the program addemup.c ( Listing 5.13 ), which found the sum of the first 20 integers. 

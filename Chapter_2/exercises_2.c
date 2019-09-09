@@ -20,8 +20,6 @@ void t_name(void)
 
 }
 
-
-
 /*
 	Write a program to print your name and address.
 */
@@ -29,8 +27,6 @@ void t_ad(void)
 {
 	printf("I am Hanbing Yin, I live in China.\n");
 }
-
-
 
 /*
 	Write a program that converts your age in years to days and displays both values.
@@ -44,8 +40,6 @@ void t_year_day(void)
 	day = year * 365;
 	printf("I am %d years old, also %d days old.\n", year, day);
 }
-
-
 
 /*
 	Write a program that produces the following output:
@@ -77,8 +71,6 @@ void t_fellow(void)
 	deny();
 }
 
-
-
 /*
 	Write a program that produces the following output:
 
@@ -109,8 +101,6 @@ void t_country(void)
 	ci();
 }
 
-
-
 /*
 	Write a program that creates an integer variable called toes.
 	Have the program set toes to 10.
@@ -125,8 +115,6 @@ void t_toes(void)
 	toes2 = toes * toes;
 	printf("The number of toes is %d, two times it makes %d, and its square is %d.\n", toes, dtoes, toes2);
 }
-
-
 
 /*
 	Many studies suggest that smiling has benefits. 
@@ -157,7 +145,6 @@ void t_smile(void)
 	printf("\n");
 }
 
-
 /*
 	In C, one function can call another. 
 	Write a program that calls a function named one_three().
@@ -178,7 +165,6 @@ void one_three(void)
 	two();
 	printf("three\n");
 }
-
 
 void two(void)
 {

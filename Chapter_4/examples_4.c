@@ -87,8 +87,10 @@ void printout(void)
 }
 
 //* width -- field widths */
-// #define PAGES 959
-// 959 is a 3 digits long integer
+/* 
+	#define PAGES 959
+	959 is a 3 digits long integer
+*/
 void width(void)
 {
 	printf("*%d*\n", PAGES);	// *959*

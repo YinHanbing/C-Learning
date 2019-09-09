@@ -29,7 +29,6 @@ void shoes2(void)
 	printf("If the shoe fits, wear it.\n");
 }
 
-
 //* golf -- golf tournament scorecard */
 void golf(void)
 {
@@ -39,7 +38,6 @@ void golf(void)
 	printf("                  cheeta   tarzan    jane\n");
 	printf("First round score %4d %8d %8d\n", cheeta, tarzan, jane);
 }
-
 
 //* squares -- produces a table of first 20 squares */
 void squares(void)
@@ -52,7 +50,6 @@ void squares(void)
 		num = num + 1;
 	}
 }
-
 
 //* wheat -- exponential growth */
 void wheat(void)
@@ -80,7 +77,6 @@ void wheat(void)
 	printf("That's all.\n");
 }
 
-
 //* divide -- divisions we have known */
 void divide(void)
 {
@@ -91,7 +87,6 @@ void divide(void)
 	printf("mixed division:    7./4  is %1.2lf \n", 7. / 4);
 }
 
-
 /* rules -- precedence test */
 void rules(void)
 {
@@ -100,7 +95,6 @@ void rules(void)
 	top = score = -(2 + 5) * 6 + (4 + 3 * (2 + 3));
 	printf("top = %d,score = %d\n", top, score);
 }
-
 
 //* sizeof -- uses sizeof operator */
 void size(void)
@@ -111,7 +105,6 @@ void size(void)
 	intsize = sizeof(int);
 	printf("n = %d, n has %zd bytes; all ints have %zd bytes.\n", n, sizeof(n), intsize);
 }
-
 
 // min_sec.c -- converts seconds to minutes and seconds
 void minsec(void)
@@ -132,7 +125,6 @@ void minsec(void)
 	printf("Done!\n");
 }
 
-
 /* add_one -- incrementing: prefix and postfix */
 void add_one(void)
 {
@@ -146,7 +138,6 @@ void add_one(void)
 	}
 }
 
-
 //* post_pre -- postfix vs prefix */
 void post_pre(void)
 {
@@ -158,7 +149,6 @@ void post_pre(void)
 	printf("a   a_post  b    pre_b \n");
 	printf("%ld %5d %5d %5d\n", a, a_post, b, pre_b);
 }
-
 
 //* bottles -- decrementing: prefix */
 void bottles(void)

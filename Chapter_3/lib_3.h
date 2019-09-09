@@ -50,7 +50,6 @@ void badcount(void);
 //* escape -- uses escape character */
 void escape(void);
 
-
 /*--- Declaration of Functions in Programming Exercises ---*/
 
 //* exercise_1 overflow -- displays the overflow and underflow of some datatypes */

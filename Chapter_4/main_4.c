@@ -2,6 +2,7 @@
 
 int main(void)
 {
+	/*FUNCTIONS OF EXAMPLES*/
 	//talkback();
 	//praise1();
 	//praise2();
@@ -19,6 +20,8 @@ int main(void)
 	//input();
 	//varwid();
 	//skiptwo();
+
+	/*FUNCTIONS OF EXERCISES*/
 	//namecov();
 	//varname();
 	//fnum();

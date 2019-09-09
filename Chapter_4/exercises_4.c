@@ -38,7 +38,6 @@ void varname(void)
 	getchar();
 }
 
-
 /*
 	Write a program that
 	reads in a floating-point number
@@ -56,7 +55,6 @@ void fnum(void)
 	printf("Also %+.3lf or %.3E", num, num);
 
 }
-
 
 /*
 	Write a program that requests your height in inches and your name,
@@ -78,7 +76,6 @@ void higtcov(void)
 	getchar();
 
 }
-
 
 /*
 	Write a program that
@@ -116,7 +113,7 @@ void dtime(void)
 	Melissa Honeybee
 	7		8
 */
-//#include <string.h>
+//Using string.h
 void namechar(void)
 {
 	char fname[10], lname[10];
@@ -153,7 +150,7 @@ void namechar(void)
 	Also have the program include float.h and display the values of FLT_DIG and DBL_DIG.
 	Are the displayed values of 1.0/3.0 consistent with these values?
 */
-//#include <float.h>
+//Using float.h
 void dfval(void)
 {
 	float fvalue = 1.0 / 3.0;

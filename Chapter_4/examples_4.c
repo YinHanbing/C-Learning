@@ -17,10 +17,7 @@ void talkback(void)
 	printf("Well, %s, your volume is %2.2f cubic feet.\n", name, volume);
 	printf("Also, your first name has %d letters,\n", letters);
 	printf("and we have %d bytes to store it.\n", size);
-
-	getchar();
 }
-
 
 //* praise1 -- uses an assortment of strings */
 void praise1(void)
@@ -30,10 +27,7 @@ void praise1(void)
 	printf("What's your name? ");
 	scanf_s("%s", name,sizeof name);	// ERROR: Crash after typing spaces, tabs, etc. behind the first word.
 	printf("Hello, %s. %s\n", name, PRAISE);
-
-	getchar();
 }
-
 
 //* praise2 -- uses an assortment of strings */
 // try the %u or %lu specifiers if your implementation does not recognize the %zd specifier
@@ -48,8 +42,6 @@ void praise2(void)
 			strlen(name), sizeof(name));
 	printf("The phrase of praise has %zd letters", strlen(PRAISE));
 	printf("and occupies %zd memory cells.\n", sizeof(PRAISE));
-
-	getchar();
 }
 
 //* pizza -- uses defined constants in a pizza context */
@@ -65,10 +57,7 @@ void pizza(void)
 
 	printf("Your basic pizza paramenters are as follow:\n");
 	printf("circumference = %1.2f, area = %1.2f\n", circum, area);
-
-	getchar();
 }
-
 
 //* defines -- uses defined constants from limit.h and float */
 //Needs limits.h and float.h additionally
@@ -83,7 +72,6 @@ void defines(void)
 	printf("float precision = %d digits\n", FLT_DIG);
 	printf("float epsilon = %e\n", FLT_EPSILON);
 }
-
 
 //* printout.c -- uses conversion specifiers */
 void printout(void)
@@ -131,7 +119,6 @@ void floats(void)
 									*/
 }
 
-
 //* flags -- illustrates some formatting flags */
 void flags(void)
 {
@@ -142,7 +129,6 @@ void flags(void)
 															// in %05.3d, flag 0 was ignored because the 5.3 is a specific precision.
 }
 
-
 //* stringf -- string formatting */
 void stringf(void)					// BLURB has 20 characters
 {
@@ -150,10 +136,8 @@ void stringf(void)					// BLURB has 20 characters
 	printf("[%24s]\n", BLURB);		// [    Authentic imitation!]
 	printf("[%24.5s]\n", BLURB);	// [                   Authe]
 	printf("[%-24.5s]\n", BLURB);	// [Authe                   ]
-	
 									// .5 tells printf() to print just 5 characters
 }
-
 
 //* intconv -- some mismatched integer conversions */
 void intconv(void)
@@ -169,7 +153,6 @@ void intconv(void)
 																				// printf("%hd", 65618); = 65618 % 65536 = 82
 }
 
-
 //* floatcnv -- mismatched floating-point conversions */
 void floatcov(void)
 {
@@ -184,7 +167,6 @@ void floatcov(void)
 	printf("%ld %ld %ld %ld\n", n1, n2, n3, n4);	// %ld make prinf() read 4 bytes, ERROR!
 }
 
-
 //* prntval -- finding printf()'s return value */
 void prntval(void)
 {
@@ -195,7 +177,6 @@ void prntval(void)
 															// prints information and assigns a value to a variable.
 	printf("The printf() function printed %d characters.\n", rv);
 }
-
 
 //* longstrg –– printing long strings */
 void longstrg(void)
@@ -208,7 +189,6 @@ long string.\n");
 		"long string.\n");	// ANSI C
 }
 
-
 //* input -- when to use & */
 void input(void)
 {
@@ -220,10 +200,7 @@ void input(void)
 	scanf_s("%d %f", &age, &assets);	// use the & here
 	scanf_s("%s", pet, sizeof(pet));	// no & for char array
 	printf("%d $%.2f %s\n", age, assets, pet);
-
-	getchar();
 }
-
 
 //* varwid.c -- uses variable-width output field */
 void varwid(void)
@@ -240,10 +217,7 @@ void varwid(void)
 	scanf_s("%d %d", &width, &precision);
 	printf("Weight = %*.*f\n", width, precision, weight);	// "%*(width).*(precision)f"
 	printf("Done!\n");
-
-	getchar();
 }
-
 
 //* skiptwo -- skips over first two integers of input */
 void skiptwo(void)
@@ -253,6 +227,4 @@ void skiptwo(void)
 	printf("Please enter three integers:\n");
 	scanf_s("%*d %*d %d", &n);	// skip two integers and copy the third into n
 	printf("The last integer was %d\n", n);
-
-	getchar();
 }

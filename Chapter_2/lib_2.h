@@ -4,13 +4,9 @@
 /*--- Declaration of Functions in Examples ---*/
 
 void first(void);	// ANSI/ISO C function prototyping
-
 void fathm_ft(void);
-
 void butler(void);	
 void two_func(void);
-
-
 
 /*--- Declaration of Functions in Programming Exercises ---*/
 
@@ -39,7 +35,6 @@ void t_toes(void);
 //* t_smile -- exercise 7 */
 void smile(void);
 void t_smile(void);
-
 
 //* t_count -- exercise 8 */
 void one_three(void);

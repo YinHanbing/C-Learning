@@ -26,7 +26,7 @@ int main(void)
 	//dtime();
 	//namechar();
 	//dfval();
-	fulcos();
+	//fulcos();
 
 	getchar();
 	return 0;

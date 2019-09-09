@@ -11,7 +11,7 @@ void first(void)	// a simple program
 }
 
 
-//* fathm_ft -- converts 2 fathoms to feet */
+//* fathm_ft -- Converts 2 fathoms to feet */
 void fathm_ft(void)
 {
 	int feet, fathoms;	// multiple declarations
@@ -22,11 +22,12 @@ void fathm_ft(void)
 }
 
 
-//* two_func.c -- a program using two functions in one file */
+//* two_func.c -- A program using two functions in one file */
 void butler(void)	// start of function definition
 {
 	printf("You rang, sir?\n");
 }
+
 void two_func(void)
 {
 	printf("I will summon the butler function.\n");

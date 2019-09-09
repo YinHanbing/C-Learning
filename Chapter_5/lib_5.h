@@ -17,12 +17,11 @@
 		--> prefix: ++b, b is changed before its value is used.
 	
 	4.	Tips:
-		--> Don't use increment or decrement operators on a variable 
+		--> DON'T use increment or decrement operators on a variable 
 			that is part of more than one argument of a function.
-		--> Don't use increment or decrement operators on a variable 
+		--> DON'T use increment or decrement operators on a variable 
 			that appears more than once in an expression.
 */
-
 
 #include <stdio.h>
 
@@ -72,7 +71,6 @@ void bottles(void);
 
 
 
-
 //*--- Declaration of Functions in Programming Exercises ---*//
 
 //* timeconv -- convers minutes to minutes and hours */
@@ -86,4 +84,3 @@ void dayconv(void);
 
 //* lenconv -- convers centimeters to feets and inchs */
 void lenconv(void);
-

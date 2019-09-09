@@ -2,6 +2,7 @@
 
 int main(void)
 {
+	/*FUNCTIONS OF EXAMPLES*/
 	//pltinum();
 	//print1();
 	//toobig();
@@ -14,13 +15,14 @@ int main(void)
 	//badcount();
 	//escape();
 
+	/*FUNCTIONS OF EXERCISES*/
 	//codevalue();
 	//alert();
 	//fltnum();
 	//year_sec();
 	//molecules();
 	//height();
-	cups();
+	//cups();
 
 	getchar();
 	return 0;

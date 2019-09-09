@@ -206,7 +206,7 @@ void floatcov(void);
 //* prntval -- finding printf()'s return value */
 void prntval(void);
 
-//* longstrg �C�C printing long strings */
+//* longstrg -- printing long strings */
 void longstrg(void);
 
 //* input -- when to use & */

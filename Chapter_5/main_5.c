@@ -2,7 +2,7 @@
 
 int main(void)
 {
-
+	/*FUNCTIONS OF EXAMPLES*/
 	//shoes1();
 	//shoes2();
 	//golf();
@@ -16,6 +16,8 @@ int main(void)
 	//post_pre();
 	//bottles();
 
+
+	/*FUNCTIONS OF EXERCISES*/
 	//timeconv();
 	//selfadd();
 	//dayconv();

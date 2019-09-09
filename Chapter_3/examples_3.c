@@ -1,6 +1,5 @@
 #include "lib_3.h"
 
-
 //* platinum -- your weight in platinum */
 void platinum(void)
 {
@@ -13,8 +12,11 @@ void platinum(void)
 
 	// get input from the user
 	scanf_s("%f", &weight);	// %f: make scanf() read a floating-number from keyboard, &weight: weight = input value
-	// assume platinum is $1700 per ounce
-	// 14.5833 converts pounds adv. (avoirdupois) to ounces troy 
+/* 
+	assume platinum is $1700 per ounce
+	14.5833 converts pounds adv. (avoirdupois) to ounces troy 
+ */
+	value = 1700.0 * weight * 14.5833;
 	value = 1700.0 * weight * 14.5833;
 	printf("Your weight in platinum is worth $%.2f.\n", value);
 	printf("You are easily worth that! If platinum prices drop,\n");

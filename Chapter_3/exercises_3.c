@@ -28,10 +28,8 @@ void codevalue(void)
 	char ascii;
 
 	printf("Please enter an ASCII code:");
-	scanf_s("%hhd", &ascii);
+	scanf_s("%d", &ascii);
 	printf("The character of %d is %c", ascii, ascii);
-
-	getchar();
 
 	/*
 		When using %d in scanf_s(), it will go on but shows��
@@ -73,13 +71,11 @@ void fltnum(void)
 	printf("Please enter a float-point value: ");
 	scanf_s("%f", &num);
 	printf("fixed-point notation: %f\nexponential notation: %e\np notation: %a\n", num, num, num);
-
-	getchar();
 }
 
 
 /*
-	There are approximately 3.156 �� 10 7 seconds in a year.
+	There are approximately 3.156 * 10^7 seconds in a year.
 
 	Write a program that
 	requests your age in years and then displays the equivalent number of seconds.
@@ -92,13 +88,11 @@ void year_sec(void)
 	printf("Please enter your old in year form: ");
 	scanf_s("%d", &year);
 	printf("Wow, you're about %e seconds old!", 3.156e7 * year);
-
-	getchar();
 }
 
 
 /*
-	The mass of a single molecule(����) of water is about 3.0��10-23 grams. A quart of water is about 950 grams.
+	The mass of a single molecule of water is about 3.0 * 10^(-23) grams. A quart of water is about 950 grams.
 
 	Write a program that
 	requests an amount of water, in quarts,
